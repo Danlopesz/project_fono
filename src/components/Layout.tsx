@@ -1,11 +1,29 @@
-import { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { ReactNode, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 type Props = {
     children: ReactNode;
 };
 
 export default function Layout({ children }: Props) {
+    const location = useLocation();
+    const isIndex = location.pathname === "/";
+    const [veioDoIndex, setVeioDoIndex] = useState(false);
+
+    useEffect(() => {
+        if (isIndex) {
+            // Usuário está no Index: libera a navegação
+            sessionStorage.setItem("passou_pelo_index", "true");
+            setVeioDoIndex(true);
+        } else {
+            // Está numa página de ambiente: checa se passou pelo Index antes
+            const flag = sessionStorage.getItem("passou_pelo_index");
+            setVeioDoIndex(flag === "true");
+        }
+    }, [isIndex]);
+
+    const mostrarBotaoInicio = !isIndex && veioDoIndex;
+
     return (
         <>
             <header className="header">
@@ -14,15 +32,16 @@ export default function Layout({ children }: Props) {
                     Cuidando da comunicação, audição e qualidade de vida
                 </p>
 
-                {/* Navegação opcional */}
-                <nav className="nav">
-                    <Link to="/">Início</Link>
-                </nav>
+                {mostrarBotaoInicio && (
+                    <nav className="nav">
+                        <Link to="/">Início</Link>
+                    </nav>
+                )}
             </header>
 
             <main className="main">{children}</main>
 
-            {/* ✅ SEU FOOTER COMPLETO MANTIDO */}
+            {/* ✅ FOOTER COMPLETO MANTIDO */}
             <footer className="footer">
                 <div className="footer-container">
                     <div className="footer-logo-section">
@@ -67,9 +86,7 @@ export default function Layout({ children }: Props) {
                         </a>
                     </div>
                     <div className="footer-bottom">
-                        <p>
-                            © Projeto acadêmico - Fonoaudiologia
-                        </p>
+                        <p>© Projeto acadêmico - Fonoaudiologia</p>
                     </div>
                 </div>
             </footer>
