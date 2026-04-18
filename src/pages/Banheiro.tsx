@@ -1,44 +1,64 @@
-import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 
 export default function Banheiro() {
   return (
     <Layout>
       <div className="location-indicator">
-        <p className="location">📍 Você escaneou este QR Code no Banheiro</p>
+        <p className="location">📍 Banheiro</p>
       </div>
 
       <section className="content">
-        <p>
-          A Fonoaudiologia é a área da saúde que cuida da comunicação,
-          audição, voz e funções como mastigação e deglutição.
-        </p>
+        <div className="hook-box">
+          <p>
+            Um momento de pausa. Aproveite para conhecer a Fonoaudiologia —
+            uma área que provavelmente afeta mais a sua vida do que você imagina.
+          </p>
+        </div>
       </section>
 
       <section className="content">
-        <h2>Áreas de atuação</h2>
-        <ul>
-          <li>Fala e linguagem</li>
-          <li>Audição</li>
-          <li>Voz</li>
-          <li>Deglutição</li>
+        <h2>O que faz um fonoaudiólogo?</h2>
+        <ul className="area-list">
+          <li className="area-card">
+            <span className="area-badge">🗣️</span>
+            <div className="area-info">
+              <strong>Voz</strong>
+              <p>Qualidade, saúde e resistência vocal</p>
+            </div>
+          </li>
+          <li className="area-card">
+            <span className="area-badge">👂</span>
+            <div className="area-info">
+              <strong>Audição</strong>
+              <p>Diagnóstico e prevenção de perda auditiva</p>
+            </div>
+          </li>
+          <li className="area-card">
+            <span className="area-badge">💬</span>
+            <div className="area-info">
+              <strong>Fala e linguagem</strong>
+              <p>Da infância à vida adulta</p>
+            </div>
+          </li>
+          <li className="area-card">
+            <span className="area-badge">🍽️</span>
+            <div className="area-info">
+              <strong>Deglutição</strong>
+              <p>Mastigação, engolir e funções orais</p>
+            </div>
+          </li>
         </ul>
       </section>
 
       <section className="content">
-        <h2>Você sabia?</h2>
-        <p>
-          O fonoaudiólogo atua desde a infância até a terceira idade,
-          ajudando na qualidade de vida e comunicação.
-        </p>
-      </section>
-
-      <section className="content">
-        <h2>Quando procurar ajuda?</h2>
-        <p>
-          Dificuldade para falar, ouvir, engolir ou alterações na voz
-          são sinais importantes que merecem atenção.
-        </p>
+        <div className="alert-card alert-card--info">
+          <span className="alert-icon">💡</span>
+          <div className="alert-text">
+            <strong>Você sabia?</strong>
+            O fonoaudiólogo atua desde a triagem neonatal até o cuidado com
+            idosos — uma das profissões com maior amplitude na saúde.
+          </div>
+        </div>
       </section>
     </Layout>
   );

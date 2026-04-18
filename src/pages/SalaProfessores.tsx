@@ -1,44 +1,68 @@
-import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 
 export default function SalaProfessores() {
   return (
     <Layout>
       <div className="location-indicator">
-        <p className="location">📍 Você escaneou este QR Code na Sala dos Professores</p>
+        <p className="location">📍 Sala dos Professores</p>
       </div>
 
       <section className="content">
-        <p>
-          Professores utilizam a voz como principal ferramenta de trabalho.
-          Cuidar dela é essencial para manter a saúde e o desempenho profissional.
-        </p>
+        <div className="hook-box">
+          <p>
+            Professores usam a voz como ferramenta de trabalho todos os dias.
+            Pequenos hábitos fazem uma diferença enorme ao longo dos anos.
+          </p>
+        </div>
       </section>
 
       <section className="content">
         <h2>Por que isso importa aqui?</h2>
         <p>
-          O uso intenso da voz pode causar desgaste vocal, levando a rouquidão,
-          cansaço e até problemas mais sérios se não houver cuidado.
+          O uso contínuo da voz em sala de aula provoca fadiga vocal progressiva.
+          Sem cuidado, rouquidão e nódulos nas cordas vocais são consequências reais.
         </p>
       </section>
 
       <section className="content">
-        <h2>Dicas práticas</h2>
-        <ul>
-          <li>Beba água regularmente</li>
-          <li>Evite gritar ou falar muito alto</li>
-          <li>Faça pausas ao longo do dia</li>
-          <li>Evite pigarrear com frequência</li>
+        <h2>Dicas de higiene vocal</h2>
+        <ul className="tip-list">
+          <li className="tip-item">
+            <span className="tip-icon">💧</span>
+            <span className="tip-text">
+              Hidrate-se constantemente — água em temperatura ambiente é ideal
+            </span>
+          </li>
+          <li className="tip-item">
+            <span className="tip-icon">🤫</span>
+            <span className="tip-text">
+              Evite pigarrear. Prefira engolir saliva ou beber água
+            </span>
+          </li>
+          <li className="tip-item">
+            <span className="tip-icon">⏸️</span>
+            <span className="tip-text">
+              Faça pausas vocais durante o dia — o descanso também é parte do cuidado
+            </span>
+          </li>
+          <li className="tip-item">
+            <span className="tip-icon">🚫</span>
+            <span className="tip-text">
+              Evite sussurrar — exige mais esforço das cordas vocais do que falar normalmente
+            </span>
+          </li>
         </ul>
       </section>
 
       <section className="content">
-        <h2>Quando procurar um fonoaudiólogo?</h2>
-        <p>
-          Rouquidão constante, dor ao falar ou perda de voz são sinais de alerta
-          e devem ser avaliados por um profissional.
-        </p>
+        <div className="alert-card">
+          <span className="alert-icon">⚠️</span>
+          <div className="alert-text">
+            <strong>Quando procurar um fonoaudiólogo?</strong>
+            Rouquidão por mais de 2 semanas, dor ao falar ou cansaço vocal
+            frequente são sinais que merecem avaliação profissional.
+          </div>
+        </div>
       </section>
     </Layout>
   );

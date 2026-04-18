@@ -5,39 +5,52 @@ const Index = () => {
     return (
         <Layout>
             <section className="about">
-                <h2>O que é Fonoaudiologia?</h2>
-                <p>
-                    A Fonoaudiologia é a área da saúde responsável pela prevenção,
-                    avaliação e tratamento de distúrbios relacionados à comunicação
-                    humana, audição, voz e deglutição.
-                </p>
+                <div className="hook-box">
+                    <p>
+                        Você chegou aqui por um QR Code. Cada ambiente da faculdade tem
+                        informações específicas sobre Fonoaudiologia — a área da saúde que
+                        cuida da sua voz, audição, fala e deglutição.
+                    </p>
+                </div>
             </section>
 
             <section className="areas">
                 <h2>Explore por ambiente</h2>
 
-                <div className="area">
-                    <h3>Sala dos Professores</h3>
-                    <p>Cuidados com a voz e higiene vocal.</p>
-                    <Link to="/sala-professores">Saiba mais</Link>
+                <div className="area-card">
+                    <div className="area-badge">🎙️</div>
+                    <div className="area-info">
+                        <h3>Sala dos Professores</h3>
+                        <p>Higiene vocal e cuidados com a voz</p>
+                    </div>
+                    <Link to="/sala-professores" className="area-link">Ver mais →</Link>
                 </div>
 
-                <div className="area">
-                    <h3>Banheiro</h3>
-                    <p>Conheça a Fonoaudiologia e suas áreas.</p>
-                    <Link to="/banheiro">Saiba mais</Link>
+                <div className="area-card">
+                    <div className="area-badge">📋</div>
+                    <div className="area-info">
+                        <h3>Banheiro</h3>
+                        <p>O que é a Fonoaudiologia e suas áreas</p>
+                    </div>
+                    <Link to="/banheiro" className="area-link">Ver mais →</Link>
                 </div>
 
-                <div className="area">
-                    <h3>Refeitório</h3>
-                    <p>Saúde auditiva e exposição ao ruído.</p>
-                    <Link to="/refeitorio">Saiba mais</Link>
+                <div className="area-card">
+                    <div className="area-badge">🔊</div>
+                    <div className="area-info">
+                        <h3>Refeitório</h3>
+                        <p>Saúde auditiva e exposição ao ruído</p>
+                    </div>
+                    <Link to="/refeitorio" className="area-link">Ver mais →</Link>
                 </div>
 
-                <div className="area">
-                    <h3>Elevador</h3>
-                    <p>Informações rápidas sobre a Fonoaudiologia.</p>
-                    <Link to="/elevador">Saiba mais</Link>
+                <div className="area-card">
+                    <div className="area-badge">🛗</div>
+                    <div className="area-info">
+                        <h3>Elevador</h3>
+                        <p>Curiosidades rápidas sobre a Fono</p>
+                    </div>
+                    <Link to="/elevador" className="area-link">Ver mais →</Link>
                 </div>
             </section>
         </Layout>
