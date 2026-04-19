@@ -69,6 +69,9 @@ export default function Layout({ children }: Props) {
                     <div className="footer-bottom">
                         <p>© Projeto acadêmico - Fonoaudiologia</p>
                     </div>
+                    <div className="footer-dev">
+                        <p>Desenvolvido por Daniel Lopes</p>
+                    </div>
                 </div>
             </footer>
         </>
