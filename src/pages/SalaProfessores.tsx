@@ -19,8 +19,8 @@ export default function SalaProfessores() {
       <section className="content">
         <h2>Por que isso importa aqui?</h2>
         <p>
-          O uso contínuo da voz em sala de aula provoca fadiga vocal progressiva.
-          Sem cuidado, rouquidão e nódulos nas cordas vocais são consequências reais.
+          O uso profissional e contínuo da voz em sala de aula pode provocar fadiga vocal.
+          Sem os devidos cuidados, alterações na qualidade vocal e alterações na laringe podem ser consequências reais.
         </p>
       </section>
 
@@ -48,7 +48,13 @@ export default function SalaProfessores() {
           <li className="tip-item">
             <span className="tip-icon">🚫</span>
             <span className="tip-text">
-              Evite sussurrar — exige mais esforço das cordas vocais do que falar normalmente
+              Evite sussurrar — exige mais esforço das pregas vocais do que falar normalmente
+            </span>
+          </li>
+          <li className="tip-item">
+            <span className="tip-icon">🎤</span>
+            <span className="tip-text">
+              Faça o uso de microfone sempre que possível.
             </span>
           </li>
         </ul>
@@ -59,8 +65,8 @@ export default function SalaProfessores() {
           <span className="alert-icon">⚠️</span>
           <div className="alert-text">
             <strong>Quando procurar um fonoaudiólogo?</strong>
-            Rouquidão por mais de 2 semanas, dor ao falar ou cansaço vocal
-            frequente são sinais que merecem avaliação profissional.
+            Rouquidão ou alterações na qualidade vocal por mais de 2 semanas,
+            dor ao falar ou cansaço vocal frequentes são sinais que merecem avaliação profissional.
           </div>
         </div>
       </section>

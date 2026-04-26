@@ -23,28 +23,32 @@ export default function Banheiro() {
             <span className="area-badge">🗣️</span>
             <div className="area-info">
               <strong>Voz</strong>
-              <p>Qualidade, saúde e resistência vocal</p>
+              <p>Avaliação,prevenção e reabilitação dos distúrbios vocais,
+                promovendo o uso saudável e eficiente da voz em diferentes contextos</p>
             </div>
           </li>
           <li className="area-card">
             <span className="area-badge">👂</span>
             <div className="area-info">
               <strong>Audição</strong>
-              <p>Diagnóstico e prevenção de perda auditiva</p>
+              <p>Diagnóstico, tratamento e reabilitação dos distúrbios de audição e do equilíbrio,
+                com ênfase também na prevenção da perda auditiva</p>
             </div>
           </li>
           <li className="area-card">
             <span className="area-badge">💬</span>
             <div className="area-info">
               <strong>Fala e linguagem</strong>
-              <p>Da infância à vida adulta</p>
+              <p>Avaliação, prevenção, diagnóstico e intervenção nos transtornos da comunicação oral,
+                promovendo o desenvolvimento e a funcionalidade da linguagem e da fala em todas as fases da vida</p>
             </div>
           </li>
           <li className="area-card">
-            <span className="area-badge">🍽️</span>
+            <span className="area-badge">👄</span>
             <div className="area-info">
-              <strong>Deglutição</strong>
-              <p>Mastigação, engolir e funções orais</p>
+              <strong>Motrocidade Orofacial</strong>
+              <p>Avaliação e intervenção das funções orofaciais, como sucção, respiração,
+                mastigação, deglutição e fala, e de seus distúrbios</p>
             </div>
           </li>
         </ul>

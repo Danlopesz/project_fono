@@ -20,9 +20,10 @@ export default function Refeitorio() {
       <section className="content">
         <h2>Ruído e audição</h2>
         <p>
-          Ambientes com mais de 85 decibéis — como um refeitório cheio —
-          podem causar dano auditivo progressivo com exposição frequente.
-          O problema: a perda auditiva por ruído é permanente e silenciosa.
+          Ambientes com níveis de progressão sonora acima de 85 dB(A),
+          como ocorre em alguns momentos no refeitório cheio, especialmente quando a exposição é frequente
+          ou prolongada, estão associados ao risco de dano auditivo progressivo.
+          O problema: a perda auditiva induzida por ruído tem caráter geralmente irreversível, pode evoluir de forma gradual e inicialmente assintomática.
         </p>
       </section>
 
@@ -32,8 +33,8 @@ export default function Refeitorio() {
           <li className="tip-item">
             <span className="tip-icon">🎧</span>
             <span className="tip-text">
-              Fones com volume máximo por mais de 1h/dia já causam dano.
-              Use no máximo 60% do volume
+              A exposição frequente a níveis sonoros acima de 85 dB(A) ou a volumes
+              elevados em fones de ouvido pode aumentar o risco de perda auditiva por ruído,sendo recomendado o uso de volume moderado(60%do volume) e limitação de tempo de exposição
             </span>
           </li>
           <li className="tip-item">
